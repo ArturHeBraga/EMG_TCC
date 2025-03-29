@@ -2,7 +2,7 @@ import serial
 import threading
 
 class LeitorSerial:
-    def __init__(self, porta='COM3', baudrate=9600, callback=None):
+    def __init__(self, porta='COM5', baudrate=9600, callback=None):
         self.serial = serial.Serial(porta, baudrate)
         self.callback = callback
         self.rodando = False
